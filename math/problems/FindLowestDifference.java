@@ -21,7 +21,7 @@ public class FindLowestDifference {
 
     // Driver Code
     public static void main(String[] args) {
-       System.out.println(findSmallestDifference()) ;
+       System.out.println( "the minimumDifference is: " +findSmallestDifference()) ;
         /*
          Implement in java.
          Read this below two array. Find the lowest difference between the two array cell.

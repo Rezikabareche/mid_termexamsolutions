@@ -26,13 +26,12 @@ public class DataReader {
 		 */
 
 
+		String filePath = System.getProperty("C:\\Users\\My Pc\\Desktop\\midterm-coding-exam\\src\\data");
+		LinkedList<String> linkedList = new LinkedList<>();
+		Stack<String> stack = new Stack<>();
 
-				String filePath = System.getProperty("C:\\Users\\My Pc\\Desktop\\midterm-coding-exam\\src\\data");
-				LinkedList<String> linkedList = new LinkedList<>();
-				Stack<String> stack = new Stack<>();
-
-				try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-					String line = reader.readLine();
+		try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+			String line = reader.readLine();
 					while (line != null) {
 						String[] words = line.split(" ");
 						for (String word : words) {
