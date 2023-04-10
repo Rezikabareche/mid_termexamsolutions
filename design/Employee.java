@@ -29,6 +29,13 @@ public interface Employee {
 	//employee yearsOfEmployment
 	public int yearsOfEmployment(int a);
 
+	//This method will return the manager of the employee
+    public String getEmployeeManager();
 
+	//This method will return the grade of the employee based on their performance.
+	 public String getEmployeeGrade();
+
+	//This method will return the type of employee, such as full-time
+	public String getEmployeeType();
 }
 

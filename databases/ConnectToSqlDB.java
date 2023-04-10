@@ -192,8 +192,5 @@ public class ConnectToSqlDB {
         List<String> students = connectToSqlDB.readDataBase("students", "name");
        for (String student: students){
            System.out.println(student);
-       }
 
-
-    }
-}*/
+*/

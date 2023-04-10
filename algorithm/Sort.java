@@ -1,4 +1,4 @@
-package algorithm;
+/*package algorithm;
 
 public class Sort {
 
@@ -8,7 +8,7 @@ public class Sort {
 	 * Store all the sorted data into one of the databases.
 	 */
 
-
+/*
     public int[] selectionSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
@@ -34,7 +34,7 @@ public class Sort {
     public int[] insertionSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
-        public int[] insertionSort(int[] array1) {
+       // public int[] insertionSort(int[] array1) {
 
             final long startTime1 = System.currentTimeMillis();
             int[] list1 = array;
@@ -117,3 +117,4 @@ public class Sort {
         }
     }
 }
+*/
