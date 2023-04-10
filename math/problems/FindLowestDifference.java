@@ -7,6 +7,7 @@ public class FindLowestDifference {
         // Calculate size of both arrays
         int m = array1.length;
         int n = array2.length;
+
         int minDiff = Integer.MAX_VALUE; // Initialize with maximum integer value
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {

@@ -24,39 +24,38 @@ public class DataReader {
 		 * Demonstrate how to use Stack that includes push,peek,search,pop elements.
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
-
-
-		String filePath = System.getProperty("C:\\Users\\My Pc\\Desktop\\midterm-coding-exam\\src\\data");
+		String filePath = "src/";
 		LinkedList<String> linkedList = new LinkedList<>();
 		Stack<String> stack = new Stack<>();
 
-		try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
-			String line = reader.readLine();
-					while (line != null) {
-						String[] words = line.split(" ");
-						for (String word : words) {
-							linkedList.add(word);
-							stack.push(word);
-						}
-						line = reader.readLine();
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
+		try {
+			BufferedReader bufferedReader = new BufferedReader(new FileReader(filePath));
+			String line = bufferedReader.readLine();
+			while (line != null) {
+				if (!line.trim().isEmpty()) {
+					linkedList.add(line.trim());
+					stack.push(line.trim());
 				}
-
-				// print the LinkedList in FIFO order
-				System.out.println("LinkedList:");
-				for (String word : linkedList) {
-					System.out.print(word + " ");
-				}
-
-				// print the Stack in FILO order
-				System.out.println("\n\nStack:");
-				while (!stack.empty()) {
-					System.out.print(stack.pop() + " ");
-				}
+				line = bufferedReader.readLine();
 			}
+			bufferedReader.close();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+
+// Iterate through the LinkedList using For Each loop
+		for (String word : linkedList) {
+			System.out.println(word);
+		}
+
+// Iterate through the Stack using pop() method
+		while (!stack.isEmpty()) {
+			System.out.println(stack.pop());
+
+		}
+	}
+}
+
 
 
 

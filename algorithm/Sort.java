@@ -1,24 +1,28 @@
-/*package algorithm;
+package algorithm;
 
-import static java.io.ObjectInputFilter.merge;
+//import static java.io.ObjectInputFilter.merge;
 
 
 public class Sort {
 
 
-	/*
-	 * Please implement all the sorting algorithm. Feel free to add helper methods.
-	 * Store all the sorted data into one of the databases.
-	 */
-   /* long executionTime = 0;
+    /*
+     * Please implement all the sorting algorithm. Feel free to add helper methods.
+     * Store all the sorted data into one of the databases.
+     */
+    public static void main(String args[]) {
 
-    public int[] selectionSort(int [] array){
+    }
+
+    long executionTime = 0;
+
+    public int[] selectionSort(int[] array) {
         final long startTime = System.currentTimeMillis();
-        int [] list = array;
+        int[] list = array;
 
-        for(int j=0; j<array.length-1; j++){
+        for (int j = 0; j < array.length - 1; j++) {
             int min = j;
-            for(int i=j+1; i<array.length; i++) {
+            for (int i = j + 1; i < array.length; i++) {
                 if (array[i] < array[min])
                     min = i;
             }
@@ -33,11 +37,13 @@ public class Sort {
         this.executionTime = executionTime;
         return list;
     }
+}
+    /*
 
     public int[] insertionSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
-       // public int[] insertionSort(int[] array1) {
+        public int[] insertionSort(int[] array1) {
 
             final long startTime1 = System.currentTimeMillis();
             int[] list1 = array;
@@ -56,8 +62,8 @@ public class Sort {
         this.executionTime = executionTime;
         return list;
     }
-
-    public int[] bubbleSort(int [] array){
+*/
+   /* public int[] bubbleSort(int [] array){
         int [] list = array;
         public int[] bubbleSort(int[] array) {
         final long startTime = System.currentTimeMillis();
@@ -109,18 +115,10 @@ public class Sort {
         return sortedArray;
     }
 
-    public int[] mergeSort(int[] array, int left, int right) {
-        final long startTime = System.currentTimeMillis();
-        int[] sortedArray = array;
 
-        if (left < right) {
-            int middle = (left + right) / 2;
-            mergeSort(sortedArray, left, middle);
-            mergeSort(sortedArray, middle + 1, right);
-            merge(sortedArray, left, middle);
 
     }
-    
+   /*
 
     public int [] mergeSort(int [] array){
         int [] list = array;
@@ -137,8 +135,8 @@ public int[] mergeSort(int[] array, int left, int right) {
         return list;
     }
     
-
-    public int [] quickSort(int [] array){
+*/
+   /* public int [] quickSort(int [] array){
         int [] list = array;
         //implement here
         
@@ -146,7 +144,7 @@ public int[] mergeSort(int[] array, int left, int right) {
 
         return list;
     }
-    
+   /*
     public int [] heapSort(int [] array){
         int [] list = array;
         //implement here
@@ -155,8 +153,8 @@ public int[] mergeSort(int[] array, int left, int right) {
 
         return list;
     }
-
-
+*/
+/*
     public int [] bucketSort(int [] array){
         int [] list = array;
         //implement here
@@ -164,8 +162,8 @@ public int[] mergeSort(int[] array, int left, int right) {
         
 
         return list;
-    }
-    
+    }*/
+  /*
     public int [] shellSort(int [] array){
         int [] list = array;
         //implement here
