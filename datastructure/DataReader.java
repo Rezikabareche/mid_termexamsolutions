@@ -24,7 +24,7 @@ public class DataReader {
 		 * Demonstrate how to use Stack that includes push,peek,search,pop elements.
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
-		String filePath = "src/";
+		String filePath = "C:\\Users\\My Pc\\Desktop\\midterm-coding-exam\\src\\data\\self-driving-car.txt";
 		LinkedList<String> linkedList = new LinkedList<>();
 		Stack<String> stack = new Stack<>();
 
