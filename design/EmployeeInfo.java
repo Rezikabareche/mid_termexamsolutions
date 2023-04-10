@@ -2,42 +2,10 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo implements Employee {
+public class EmployeeInfo  {
 
-	@Override
-	public int employeeId() {
-		return 0;
-	}
 
-	@Override
-	public String employeeName() {
-		return null;
-	}
 
-	@Override
-	public int assignDepartment() {
-		return 0;
-	}
-
-	@Override
-	public int calculateSalary() {
-		return 0;
-	}
-
-	@Override
-	public void benefitLayout() {
-            System.out.println("full health");
-	}
-
-	@Override
-	public void hireDate(int year) {
-      System.out.println("the hire date is "+year);
-	}
-
-	@Override
-	public int yearsOfEmployment(int a) {
-		return a;
-	}
 }
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.

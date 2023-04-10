@@ -34,8 +34,18 @@ public class Sort {
     public int[] insertionSort(int [] array){
         final long startTime = System.currentTimeMillis();
         int [] list = array;
-        //implement here
+        public int[] insertionSort(int[] array1) {
 
+            final long startTime1 = System.currentTimeMillis();
+            int[] list1 = array;
+            int n = list.length;
+            for (int i = 1; i < n; ++i) {
+                int key = list[i];
+                int j = i - 1;
+                while (j >= 0 && list[j] > key) {
+                    list[j + 1
+
+                }
 
 
         final long endTime = System.currentTimeMillis();
